@@ -1,0 +1,37 @@
+May 20, 2024
+For the first part of the tutorial I learn the following :
+
+-Creating new angular project. By command ng new "name of the project"
+-Generating component using comman ng generate component "name of the component"
+
+-Component is one of the building blocks of angular. Component are directives but directives with the template.
+It has three important properties
+selector, templateUrl, and styleUrl
+
+-I learn how to use data binding such as event binding and property binding.
+data binding is important to pass data from the view template to the corresponding component class or
+from component class to the view template.
+
+I also use pipe to alter the appearance of the heroes name using single or operator | and uppercase.
+I also use interface to by declaring the type of the data.
+
+I also learned how to loop through an array of objects using *ngFor by typing *ngFor = "let hero of heroes".
+I also learned how to implement *ngIf and ngModel by installing and importing it to the app.module.ts the FormsModule.
+
+
+I need to learn more how the use cases of these commands especially ngModel.
+
+
+May 21, 2024
+Services - I found out services play an important role in building angular projects.
+First it allows unrelated components to use data or logic needed in the view template.
+It prevents violating coding principles DRY (Do not Repeat Yourself) by storing the logic in the service, so the developer will not repeat the logic in the component class.
+You can also use services to share data, not just the business logic.
+In services, external api handles. (haven't tried yet)
+
+Dependency injection- need more reference
+Observable data -need more reference
+Subscribe -need more reference
+Browse RxJS - havent tried yet
+interpolation binding
+Understood navigation
