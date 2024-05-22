@@ -1,6 +1,14 @@
 /* AppComponent's private CSS styles */
 h1 {
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 nav a {
   padding: 1rem;
