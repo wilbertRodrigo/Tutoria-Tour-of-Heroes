@@ -35,3 +35,20 @@ Subscribe -need more reference
 Browse RxJS - havent tried yet
 interpolation binding
 Understood navigation
+
+May 22, 2024
+I finished the Tour of Heroes Tutorial.
+-I was able to grasp some rxjs operators catchError, map, tap, debounceTime, distinctUntilChanged, switchMap
+Encountered problem in installing the In-memory Web API package 
+Ask Michael Paz if he encounters this kind of error. He suggest to run
+
+npm install --force angular-in-memory-web-api --save
+Instead of 
+npm install angular-in-memory-web-api --save
+And it works! Thanks to sir Michael.
+
+-I encountered HttpClient of Angular
+
+Add some Modification in the UI and apply a simple alert message for error handling in navigating non existing id.
+
+
