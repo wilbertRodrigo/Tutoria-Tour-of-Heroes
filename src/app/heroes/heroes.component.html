@@ -13,7 +13,7 @@
     Add hero
   </button>
 </div>
-<div>
+<div *ngIf>
   <ul class="heroes">
     <li *ngFor="let hero of heroes">
       <a routerLink="/detail/{{ hero.id }}">

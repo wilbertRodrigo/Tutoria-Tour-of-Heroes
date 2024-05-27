@@ -1,7 +1,21 @@
 <h2>Top Heroes</h2>
-<div class="heroes-menu">
+<!-- <div class="heroes-menu">
   <a *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id }}">
     {{ hero.name }}
   </a>
+</div> -->
+<app-hero-search
+  (searchTextChange)="onSearchTextEntered($event)"
+></app-hero-search>
+
+<div *ngFor="let hero of heroes">
+  <ul class="search-result">
+    <li
+      *ngIf="searchText === '' || hero.name.toLowerCase().includes(searchText)"
+    >
+      <a routerLink="/detail/{{ hero.id }}">
+        {{ hero.name }}
+      </a>
+    </li>
+  </ul>
 </div>
-<app-hero-search></app-hero-search>

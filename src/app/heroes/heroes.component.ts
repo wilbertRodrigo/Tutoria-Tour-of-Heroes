@@ -16,7 +16,7 @@ export class HeroesComponent implements OnInit {
   ngOnInit(): void {
     this.getHeroes();
   }
-
+  heroName: string = '';
   getHeroes(): void {
     this.heroService.getHeroes().subscribe((heroes) => (this.heroes = heroes));
   }
@@ -32,5 +32,11 @@ export class HeroesComponent implements OnInit {
   delete(hero: Hero): void {
     this.heroes = this.heroes.filter((h) => h !== hero);
     this.heroService.deleteHero(hero.id).subscribe();
+  }
+  submitted = false;
+
+  onSubmit() {
+    this.submitted = true;
+    console.log('Form works!');
   }
 }
